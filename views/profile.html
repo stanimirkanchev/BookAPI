@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="/routes/router.js"></script>
+<style>
+h1{
+  color: white;
+}
+h3{
+  color: white;
+}
+body{
+  background-image: url("https://wallpaperscraft.com/image/dark_spot_background_texture_50611_1920x1080.jpg");
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+  <body>
+    <header>
+      <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+          <a href="/api" class="w3-bar-item w3-button"><b>W</b>elcome</a>
+          <!-- Float links to the right. Hide them on small screens -->
+          <div class="w3-right w3-hide-small">
+            <a href="/books" class="w3-bar-item w3-button">Books</a>
+            <a href="/profile" class="w3-bar-item w3-button">Profile</a>
+            <a href="/about" class="w3-bar-item w3-button">About</a>
+          </div>
+        </div>
+      </div>
+
+    </header>
+  <br>
+  <br>
+    <div class="w3-bar w3-wide w3-padding w3-card">
+        <div class="w3-right w3-hide-small">
+          <h1>user.username</h1>
+        <a type="button" href="/logout" class="w3-bar-item w3-button">LogOut</a>
+      </div>
+    </div>
+  </body>
+</html>

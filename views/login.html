@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.topright {
+    position: absolute;
+    top: 80px;
+    right: 60px;
+    font-size: 18px;
+}
+.bottomright {
+    position: absolute;
+    top: 200px;
+    right: 60px;
+    font-size: 18px;
+}
+h3{
+  color: white;
+}
+body{
+  background-image: url("https://wallpaperscraft.com/image/dark_spot_background_texture_50611_1920x1080.jpg");
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+  <body>
+    <header>
+      <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+          <a href="/api" class="w3-bar-item w3-button"><b>W</b>elcome</a>
+          <!-- Float links to the right. Hide them on small screens -->
+          <div class="w3-right w3-hide-small">
+            <a href="/books" class="w3-bar-item w3-button">Books</a>
+            <a href="/login" class="w3-bar-item w3-button">LogIn</a>
+            <a href="/about" class="w3-bar-item w3-button">About</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+		<!--login-profile-->
+
+		<!--login-profile-->
+		<!--signin-form-->
+		<div class="w3">
+			<div class="signin-form profile">
+				<h3>Login</h3>
+
+				<div class="topright">
+					<form action="/" method="post">
+						<input type="text" name="logemail" placeholder="E-mail" required="">
+						<input type="password" name="logpassword" placeholder="Password" required="">
+						<input type="submit" value="LogIn">
+					</form>
+          <form action="/forgot">
+            <input type="submit" value="forgot" />
+          </form>
+				</div>
+			</div>
+		</div>
+		<div class="agile">
+			<div class="bottomright">
+				<h3>SignUp</h3>
+
+				<div class="login-form">
+					<form action="/" method="post">
+						<input type="text" name="email" placeholder="E-mail" required="">
+            <br>
+            <br>
+						<input type="text" name="username" placeholder="Username" required="">
+            <br>
+            <br>
+						<input type="password" name="password" placeholder="Password" required="">
+            <br>
+            <br>
+						<input type="password" name="passwordConf" placeholder="Confirm Password" required="">
+            <br>
+            <br>
+						<input type="submit" value="SignUp">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!--//signin-form-->
+	</div>
+  <br>
+  <br>
+  </body>
+</html>
